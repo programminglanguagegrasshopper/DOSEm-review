@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOSEm manual</title>
+    </head>
+
+    <body>
+        <h2 style="color: rgb(18, 65, 220); font-family: Verdana; text-align: center;">DOSEm - A MS-DOS programs emulator</h2>
+        <hr>
+
+        <p style="font-family: Verdana; font-size: 15px">This program is written in C and compiled in GCC (GNU C Compiler). <br>Also this DOS emulator only works on Windows.</p>
+        <code style="font-family: Consolas; font-size: 16px; background-color: rgb(26, 26, 26); color:rgb(222, 222, 222)">DOSEm v1.0                          <br>Type "help" for a list of commands. <br>                                    <br>>>>                                 <br></code>
+
+        <p style="font-family: Verdana; font-size: 14.5px">Q&A:</p>
+
+        <p  style="font-family: Verdana; font-size: 14.5px">Q1. If 'dosemh.h' is supposed to be the commands file, then why help and close commands work?<br>
+	    A. They are accepted on dosemf.c, because 'close' would throw a error.<br><br>
+
+        Q2. Why it throws a library error?<br>
+	    A. If you don't have the neccesary libraries, then go install MinGW.<br><br>
+
+        Q3. When i run some DOS programs (like .COM or .EXE) it throws a global OS error, What do i do?<br>
+	    E: Windows 10/7/8.1/8/7 may not support MS-DOS running from the terminal.<br>
+	    A. Run DOSEm in 16-bit mode, or run it inside a Windows XP / Vista virtual machine. If none of these work,
+	    then if you have a old PC, verify for it to be x32 or to have a 32-bit processor.<br><br>
+
+        Q4. Does it support 2 formats or only one?<br>
+	    A. It supports 2 file formats. EXE & COM.<br><br>
+
+        Q5. When i compile and run the program, it throws a uncompatible error.<br>
+	    E: This can happen on VS Code, VS Community or even GCC.<br>
+	    A. If you have GCC, type this on your terminal:<br>
+		    <code style="font-family: Cascadia Mono; background-color: rgb(1, 66, 126); color:rgb(255, 255, 0) ">gcc </code>
+            <code style="font-family: Cascadia Mono; background-color: rgb(1, 66, 126); color:rgb(147, 147, 147) ">-o </code>
+            <code style="font-family: Cascadia Mono; background-color: rgb(1, 66, 126); color:rgb(244, 244, 244) ">dosem.exe dosemf.c</code>
+	    <br>and then type:<br>
+        <code style="font-family: Cascadia Mono; background-color: rgb(1, 66, 126); color:rgb(255, 255, 0) ">.\dosem.exe</code></p>
+
+        <button onclick="redirect()" style="color:rgb(247, 253, 255); background-color: rgb(0, 38, 164); border-color:rgb(0, 20, 86); font-family: Verdana;">Download DOSEm on GitHub!</button>
+
+        <script>
+            function redirect() {
+                window.location.href = "https://github.com/programminglanguagegrasshopper/DOSEm-review"; // Redirects user to github download
+            }
+        </script>
+    </body>
+
+</html>
+

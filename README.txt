@@ -1,3 +1,5 @@
+¡ This repository has been archived because of its unavailibity !
+
 DOSEm - A DOS programs emulator
 
 This program is written in C and compiled in GCC (GNU C Compiler)
